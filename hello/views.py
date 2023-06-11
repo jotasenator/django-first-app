@@ -6,4 +6,4 @@ def index(request):
     return HttpResponse('hello world, Django!!')
 
 def greet(request,name):
-    return HttpResponse(f'Hello, {name}!')
+    return HttpResponse(f'Hello, {name.capitalize()}!')
